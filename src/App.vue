@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="我是传过来的props" @onEvent="getDataHandle"/>
+  <h1>这是显示从子组件传来的数据{{message}}</h1>
 </template>
 
 <script>
@@ -10,6 +11,16 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data(){
+    return{
+      message:''
+    }
+  },
+  methods:{
+    getDataHandle(data){
+      this.message=data;
+    }
   }
 }
 </script>
