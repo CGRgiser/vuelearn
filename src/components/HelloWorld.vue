@@ -70,7 +70,10 @@ export default {
         {
           id: 10004,
           title: '今日新闻'
-        }
+        },{
+              id: 10002,
+              title: '今日新闻'
+          }
       ],
       count:1
     }
