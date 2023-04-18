@@ -94,6 +94,10 @@ export default {
       this.$emit('onEvent',this.message)
     },hello(){
       console.log('hello')
+    },sendClickHandle1(){
+      this.$emit('onEvent1',this.message)
+    },sendClickHandle2(){
+      this.$emit('onEvent2',this.message)
     }
   }
 }
