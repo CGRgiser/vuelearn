@@ -92,6 +92,8 @@ export default {
     }
     ,sendClickHandle(){
       this.$emit('onEvent',this.message)
+    },sendClickHandle1(){
+      this.$emit('onEvent1',this.message)
     }
   }
 }
