@@ -89,7 +89,11 @@ export default {
     }
     ,sendClickHandle(){
       this.$emit('onEvent',this.message)
-    }
+    }, getNewsList(){
+          this.$http.get('/api/news').then((res)=>{
+              console.log(res)
+          })
+      }
   }
 }
 </script>
