@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>我是接受的props</h1>
     <h1>{{ msg }}</h1>
-
     <h1>{{ message }}</h1>
     <div v-html="rawHtml"></div>
     <div v-bind:id="message"></div>
@@ -17,7 +16,6 @@
           {{ item.title }}
         </li>
       </ul>
-
     <h1>事件处理</h1>
     <button v-on:click="count+=1">点我加一</button>
     <button @click="clickHandle">点我减一(函数)</button>
@@ -46,7 +44,6 @@
 <script>
 
 export default {
-
   name: 'HelloWorld',
   props: {
     msg: String
